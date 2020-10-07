@@ -94,8 +94,7 @@
           align-items: center;
   text-align: center;
   color: white;
-  background-image: url("img/goldengate.jpg") no-repeat center center;
-  background-size: cover; }
+  }
   #hero h1 {
     font-size: 70px; }
   #hero p {
@@ -135,14 +134,18 @@
 
 .social-list{
   float:right;
-
+  margin: 0 0 ;
 }
 
 #footer {
   color: white;
   padding-top: 20px;   
-
 }
+
+#footer p{
+  margin-bottom: 10px;
+}
+
 #footer a{
   color: darkgray;
 }

@@ -17,6 +17,7 @@
 			<div class="row">
 				<div class="col-md-10">
 					<p>Verna Schwartz</p>
+					<h6>This site was created with Wordpress, CSS, HTML, jQuery, PHP, Bootstrap and <i class="fas fa-heart" style="color:red;"></i>.</h6>
 					<!--<ul>
 						<li><a href="https://verna.hatchetmarketing.com/">Home</a></li>
 						<li><a href="#hero1">Bulletin Board</a></li>
@@ -27,6 +28,7 @@
 
 				<div class="col-md-2">
 					<ul  class="social-list" style="font-size: 20px;">
+						<li><a href="https://github.com/vernaschwartz"><i class="fab fa-github"></i></a></li>
 						<li><a href="https://www.linkedin.com/in/verna-schwartz-486236139/"><i class="fab fa-linkedin-in"></i></a></li>
 						<li><a href="mailto:vernas._@hotmail.com"><i class="fas fa-envelope"></i></a></li>
 						<li><a href="tel://(812)613-3530"><i class="fas fa-phone"></i></a></li>
