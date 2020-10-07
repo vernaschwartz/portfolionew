@@ -4,8 +4,9 @@ get_header();
 ?>
 
 <!--Hero Section-->
-<section id="hero" style="background: url(<?php bloginfo('template_directory'); ?>/img/header background.jpg)no-repeat center center;
-    background-size: cover;">
+<section id="hero" style=" background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), 
+url('<?php bloginfo('template_directory'); ?>/img/header background.jpg')no-repeat center center; 
+background-size: cover ">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
