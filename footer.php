@@ -12,12 +12,12 @@
 ?>
 
 	<!--Footer-->
-	<footer id="footer"  style="background-color: black;">
+	<footer id="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10">
 					<p>Verna Schwartz</p>
-					<h6>This site was created with Wordpress, CSS, HTML, jQuery, PHP, Bootstrap and <i class="fas fa-heart" style="color:red;"></i>.</h6>
+					<h6>This site was created with WordPress, CSS, HTML, jQuery, PHP, Bootstrap and <i class="fas fa-heart" style="color: #F5007A;"></i>.</h6>
 					<!--<ul>
 						<li><a href="https://verna.hatchetmarketing.com/">Home</a></li>
 						<li><a href="#hero1">Bulletin Board</a></li>

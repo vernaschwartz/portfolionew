@@ -3,7 +3,6 @@
 get_header();
 ?>
 
-
 <!--Hero Section-->
 <section id="title">
     <div class="container">
@@ -26,6 +25,41 @@ get_header();
 </section>
 <!--End Hero Section-->
 
+<!--Degree Section-->
+<section id="degree">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" >
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Masters of Science in Human Computer Interaction</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">May 2020</h6>
+                        <p class="card-text">Indiana University-Purdue University Indianapolis</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" >
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Bachelors of Science in Informatics</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">May 2019</h6>
+                        <p class="card-text">Indiana University-Purdue University Indianapolis</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" >
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Certificate in Human Computer Interaction</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">May 2019</h6>
+                        <p class="card-text">Indiana University-Purdue University Indianapolis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Degree Section-->
 
 <!--Skills Section-->
 <section id="skills"  style="background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.7)), url('<?php bloginfo('template_directory'); ?>/img/computercode.jpg') no-repeat center center;
