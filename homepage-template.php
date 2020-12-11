@@ -4,7 +4,7 @@ get_header();
 ?>
 
 <!--Hero Section-->
-<section id="hero" style=" background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), 
+<section id="hero" style="background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), 
 url('<?php bloginfo('template_directory'); ?>/img/header background.jpg')no-repeat center center; 
 background-size: cover ">
     <div class="container">
@@ -34,11 +34,11 @@ background-size: cover ">
                                 <h3 class="mb-0">Design</h3>
                             </div>
                         </button>
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                             <div class="card-body text-center">
                                 <div class="col-md-6"style="float:left; margin-bottom: 20px;">
                                     <div class="content card-img-top text-center">
-                                        <a href="<?php echo esc_url( home_url('/')); ?>/" target="_blank">
+                                        <a href="<?php echo esc_url( home_url('/')); ?>jag-study" target="_blank">
                                             <div class="content-overlay"></div>
                                             <img class="content-image" src="<?php bloginfo('template_directory'); ?>/img/main page jag study.PNG">
                                             <div class="content-details fadeIn-bottom">

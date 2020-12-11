@@ -17,7 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	 <!--Required Meta Tags-->
-	 <meta charset="UTF-8">
+	 	<meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<!-- Google Fonts -->
@@ -25,9 +25,9 @@
 		<link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet">
 		
 		<!-- core CSS -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 		
 		<!-- <link href="<?php bloginfo('template_directory'); ?>/css/animate.min.css" rel="stylesheet">
 		<link href="<?php bloginfo('template_directory'); ?>/css/prettyPhoto.css" rel="stylesheet">
@@ -67,8 +67,17 @@
 
 </head>
 <body>
+<?php if( is_page( $page = 'Jag Study' )) { ?>
+<style>
+    .navbar{
+		position: relative;
+	}
+</style>
+<?php } ?>
+
+
 <!-- Standard Bootstrap Navigation -->
-<nav class="navbar fixed-top navbar-expand-md navbar-dark">
+<nav class="navbar navbar-expand-sm navbar-dark">
     <a href="<?php echo esc_url( home_url('/')); ?>" class="navbar-brand">VS</a>
 	<button class="navbar-toggler  collapsed" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>

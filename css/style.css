@@ -1,4 +1,7 @@
 /*Global */
+html {
+  scroll-behavior: smooth;
+}
 html, body {
   height: 100%;
   font-family:'Literata', serif; }
@@ -94,6 +97,25 @@ h2 {
   .navbar-collapse.collapse.show #menu-main-menu{
     background-color: #0f0f0f;
     margin-top: 2px;
+  }
+}
+#page-title{
+  padding-bottom:60px;
+  height:70%;
+}
+@media screen and (max-width:991px){
+  #page-title{
+    padding-bottom:0px;
+    height:50%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  #page-title{
+    height:70%;
+  }
+  #page-title img{
+    max-height:70%;
   }
 }
 /*End Global*/
@@ -308,6 +330,56 @@ font-weight: bold;
 /** End Skills Section **/
 
 /*** End About Page ***/
+
+/*** Projects Template ***/
+.navbar2 {
+  border-radius: 0px;
+  margin-bottom: 80px;
+  max-height: 80px;
+  background-color:#0f0f0f;
+  top:-1px;
+}
+  .navbar2 .navbar-nav{
+    display: flex;
+    padding:10px;
+    margin-bottom: 0;
+    list-style: none;
+    margin-left:0px;
+  }
+  .navbar2 .navbar-nav .nav-link:hover{
+    color: #F5007A;
+  }
+  .navbar2 .navbar-nav .nav-link.active:hover{
+    color: #F5007A;
+  }
+/*   .navbar2 .navbar-nav2 .nav-link.active{
+    border-bottom: 2px solid #F5007A;
+    background-color:#F0F0F0;
+  } */
+  .navbar2 .navbar-nav .nav-link {
+    margin-left: 15px;
+    margin-right: 15px; 
+    font-size: 20px;
+    font-family:'Literata', serif;
+    color:#F0F0F0;
+    background-color: #0f0f0f;
+    border:none;
+    border-radius:0px;
+  }
+
+
+.navbar-nav a:hover{
+  color:#F5007A;
+}
+
+@media screen and (max-width: 767px){
+#details .details-image{
+  margin-bottom:20px;
+}
+
+}
+
+/*** End Projects Template ***/
 
 /*Footer*/
 .social-list{
