@@ -10,10 +10,12 @@ get_header();
             <div class="col-md-6">
                 <div class="text">
                     <h2>About Me</h2>
-                    <p>Hello, my name is Verna.<br><br> Technology has always been a passion of mine. As I learn more about it every day, 
-                        I learn there is a much bigger world of technology than I can even imagine.<br><br> I am a born problem solver that 
-                        being said when I see a problem, I strive to solve it even if it doesn't affect me. With the big world of 
-                        technology there are many problems to solve and I am up for the challenge!</p>
+                    <p>Hello, my name is Verna.</p>
+                    <p>Technology has always been a passion of mine. As I learn more about it every day, 
+                        I learn there is a much bigger world of technology than I can even imagine.</p>
+                    <p>I am a born problem solver that 
+                    being said when I see a problem, I strive to solve it even if it doesn't affect me. With the big world of 
+                    technology there are many problems to solve and I am up for the challenge!</p>
                 </div>
             </div>
             <div class="col-md-6">
@@ -29,7 +31,10 @@ get_header();
 <section id="degree">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-12 mb-4">
+                <h3>My Degrees</h3>
+            </div>
+            <div class="col-md-4 mb-3">
                 <div class="card" >
                     <div class="card-body text-center">
                         <h5 class="card-title">Masters of Science in Human Computer Interaction</h5>
@@ -38,7 +43,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-3">
                 <div class="card" >
                     <div class="card-body text-center">
                         <h5 class="card-title">Bachelors of Science in Informatics</h5>
@@ -47,7 +52,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-3">
                 <div class="card" >
                     <div class="card-body text-center">
                         <h5 class="card-title">Certificate in Human Computer Interaction</h5>
@@ -61,55 +66,18 @@ get_header();
 </section>
 <!--End Degree Section-->
 
-<!--Skills Section-->
-<section id="skills"  style="background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.7)), url('<?php bloginfo('template_directory'); ?>/img/computercode.jpg') no-repeat center center;
-background-size: cover;">
+
+<!--Extra Section-->
+<section class="extra">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
-                <h2>My Skills</h2>
-            </div>
-            <div class="col-md-3" style="text-align:center;">
-                <p>PHP</p>
-            </div>
-            <div class="col-md-3" style="text-align:center;">
-                <p>MYSQL</p>
-            </div>
-            <div class="col-md-3" style="text-align:center;">
-                <p>JAVASCRIPT</p>
-            </div>
-            <div class="col-md-3" style="text-align:center;">
-                <p>CSS</p>
-            </div>
-            <div class="col-md-3" style="text-align:center;">
-                <p>SASS</p>
-            </div>
-            <div class="col-md-3" style="text-align:center;">
-                <p>WordPress</p>
-            </div>
-            <div class="col-md-3" style="text-align:center;">
-                <p>Bootstrap</p>
-            </div>
-            <div class="col-md-3" style="text-align:center;">
-                <p>Github</p>
-            </div>
-            <div class="col-md-3" style="text-align:center;">
-                <p>Adobe XD</p>
-            </div>
-            <div class="col-md-3" style="text-align:center;">
-                <p>CSS Grid</p>
-            </div>
-            <div class="col-md-3" style="text-align:center;">
-                <p>Prototyping</p>
-            </div>
-            <div class="col-md-3" style="text-align:center;">
-                <p>Wireframing</p>
+            <div class="col-md-12">
+                <?php the_field('about_wysiwig');?>
             </div>
         </div>
     </div>
 </section>
-<!--End Skills Section-->
-
+<!--End Extra Section-->
 
 
 <?php get_footer();?>

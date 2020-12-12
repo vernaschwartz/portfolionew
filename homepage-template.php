@@ -32,44 +32,52 @@ background-size: cover ">
                         <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             <div class="card-header" id="headingOne">
                                 <h3 class="mb-0">Design</h3>
+                                                               
                             </div>
                         </button>
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                             <div class="card-body text-center">
-                                <div class="col-md-6"style="float:left; margin-bottom: 20px;">
+
+                            <?php if (have_rows('add_new_design_project')): while(have_rows('add_new_design_project')): the_row();?>
+                                <div class="col-md-6" style="float:left; margin-bottom:20px;">
                                     <div class="content card-img-top text-center">
-                                        <a href="<?php echo esc_url( home_url('/')); ?>jag-study" target="_blank">
+                                        <a href="<?php the_sub_field('link'); ?>" target="_blank">
                                             <div class="content-overlay"></div>
-                                            <img class="content-image" src="<?php bloginfo('template_directory'); ?>/img/main page jag study.PNG">
+                                            <?php $image = get_sub_field('image');?>
+                                            <img class="content-image" src="<?php echo $image['url'];?>" alt="<?php echo $image['alt'];?>">
                                             <div class="content-details fadeIn-bottom">
-                                                <h3 class="content-title">Jag Study</h3>
+                                                <h3 class="content-title"><?php the_sub_field('fade_title');?></h3>
                                             </div>
                                         </a>
                                     </div>
                                     <div class="text-center">
-                                        <a href="<?php echo esc_url( home_url('/')); ?>/" class="a-black" target="_blank">
-                                            <h2 class="card-text">Jag Study</h2>
+                                        <a href="<?php the_sub_field('link'); ?>" class="a-black" target="_blank">
+                                            <h2 class="card-text"><?php the_sub_field('title');?></h2>
                                         </a>
-                                        <p class="card-text">An IUPUI Library Room Reservation System redesign.</p>
+                                        <p class="card-text"><?php the_sub_field('text');?></p>
                                     </div>
                                 </div>
+                                
+
                                 <div class="col-md-6" style="float:right; margin-bottom: 20px;">
                                     <div class="content card-img-top text-center">
-                                        <a href="<?php echo esc_url( home_url('/')); ?>/" target="_blank">
+                                        <a href="<?php the_sub_field('link2'); ?>" target="_blank">
                                             <div class="content-overlay"></div>
-                                            <img class="content-image" src="<?php bloginfo('template_directory'); ?>/img/user dashboard.PNG">
+                                            <?php $image2 = get_sub_field('image2');?>
+                                            <img class="content-image" src="<?php echo $image2['url'];?>" alt="<?php echo $image2['alt'];?>">
                                             <div class="content-details fadeIn-bottom">
-                                                <h3 class="content-title">User Dashboard</h3>
+                                                <h3 class="content-title"> <?php the_sub_field('fade_title2');?></h3>
                                             </div>
                                         </a>
                                     </div>
                                     <div class="text-center">
-                                        <a href="<?php echo esc_url( home_url('/')); ?>/" class="a-black" target="_blank">
-                                            <h2 class="card-text">User Dashboard</h2>
+                                        <a href="<?php the_sub_field('link2'); ?>" class="a-black" target="_blank">
+                                            <h2 class="card-text"><?php the_sub_field('title2');?></h2>
                                         </a>
-                                        <p class="card-text">A Homebase Digital Message Center redesign of the 2008 Audiovox.</p>
+                                        <p class="card-text"><?php the_sub_field('text2');?></p>
                                     </div>
                                 </div>
+                                <?php endwhile; endif; ?>
                             </div>
                         </div>
                     </div>
@@ -84,77 +92,45 @@ background-size: cover ">
                         </button>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                             <div class="card-body text-center">
+                            <?php if (have_rows('add_new_dev_project')): while(have_rows('add_new_dev_project')): the_row();?>
                                 <div class="col-md-6" style="float:left; margin-bottom: 20px;">
                                     <div class="content card-img-top text-center">
-                                        <a href="https://www.apluswindowcoverings.com/" target="_blank">
+                                        <a href="<?php the_sub_field('link'); ?>" target="_blank">
                                             <div class="content-overlay"></div>
-                                            <img class="content-image" src="<?php bloginfo('template_directory'); ?>/img/aplusbackground.png">
+                                            <?php $image = get_sub_field('image');?>
+                                            <img class="content-image" src="<?php echo $image['url'];?>" alt="<?php echo $image['alt'];?>">
                                             <div class="content-details fadeIn-bottom">
-                                                <h3 class="content-title">A+ Blinds</h3> 
+                                                <h3 class="content-title"><?php the_sub_field('fade_title');?></h3> 
                                             </div>
                                         </a>
                                     </div>
                                     <div class="text-center">
-                                        <a href="https://www.apluswindowcoverings.com/" class="a-black" target="_blank">
-                                            <h2 class="card-text">A+ Blinds</h2>
+                                        <a href="<?php the_sub_field('link'); ?>" class="a-black" target="_blank">
+                                            <h2 class="card-text"><?php the_sub_field('title');?></h2>
                                         </a>
-                                        <p class="card-text">Brand new website built with WordPress.</p>
+                                        <p class="card-text"><?php the_sub_field('text');?></p>
                                     </div>
                                 </div>
 
                                 <div class="col-md-6" style="float:right; margin-bottom: 20px;">
                                     <div class="content card-img-top text-center">
-                                        <a href="https://get-thrive.com/" target="_blank">
+                                        <a href="<?php the_sub_field('link2'); ?>" target="_blank">
                                             <div class="content-overlay"></div>
-                                            <img class="content-image" src="<?php bloginfo('template_directory'); ?>/img/thrive.PNG">
+                                            <?php $image2 = get_sub_field('image2');?>
+                                            <img class="content-image" src="<?php echo $image2['url'];?>" alt="<?php echo $image2['alt'];?>">
                                             <div class="content-details fadeIn-bottom">
-                                                <h3 class="content-title">Thrive</h3> 
+                                                <h3 class="content-title"><?php the_sub_field('fade_title2');?></h3> 
                                             </div>
                                         </a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="a-black" href="https://get-thrive.com/" target="_blank">
-                                            <h2 class="card-text">Thrive Security</h2>
+                                        <a class="a-black" href="<?php the_sub_field('link2'); ?>" target="_blank">
+                                            <h2 class="card-text"><?php the_sub_field('title2');?></h2>
                                         </a>
-                                        <p class="card-text">Brand new website built with WordPress.</p>
+                                        <p class="card-text"><?php the_sub_field('text2');?></p>
                                     </div>
                                 </div>
-
-                                <div class="col-md-6" style="float:left; margin-bottom: 20px;">
-                                    <div class="content card-img-top text-center">
-                                        <a href="https://faculty.medicine.iu.edu/relocation/" target="_blank">
-                                            <div class="content-overlay"></div>
-                                            <img class="content-image" src="<?php bloginfo('template_directory'); ?>/img/SOM background.png">
-                                            <div class="content-details fadeIn-bottom">
-                                                <h3 class="content-title">Relocation Services IU School of Medicine</h3> 
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="text-center">
-                                        <a class="a-black" href="https://faculty.medicine.iu.edu/relocation/" target="_blank">
-                                            <h2 class="card-text">Relocation Services IU School of Medicine</h2>
-                                        </a>
-                                            <p class="card-text">Brand new website built with WordPress.</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-6" style="float:right; margin-bottom: 20px;">
-                                    <div class="content card-img-top text-center">
-                                        <a href="<?php echo esc_url( home_url('/')); ?>/" target="_blank">
-                                            <div class="content-overlay"></div>
-                                            <img class="content-image" src="<?php bloginfo('template_directory'); ?>/img/sprowl background.png">
-                                            <div class="content-details fadeIn-bottom">
-                                                <h3 class="content-title">Sprowl Funeral Home</h3> 
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="text-center">
-                                        <a class="a-black" href="<?php echo esc_url( home_url('/')); ?>/" target="_blank">
-                                            <h2 class="card-text">Sprowl Funeral Home</h2>
-                                        </a>
-                                        <p class="card-text">Brand new website built with WordPress.</p>
-                                    </div>
-                                </div>
+                                <?php endwhile; endif; ?>
                             </div>
                         </div>
                     </div>

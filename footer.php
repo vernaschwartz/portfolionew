@@ -27,7 +27,7 @@
 				</div>
 
 				<div class="col-md-2">
-					<ul  class="social-list" style="font-size: 20px;">
+					<ul class="social-list" style="font-size: 20px;">
 						<li><a href="https://github.com/vernaschwartz"><i class="fab fa-github"></i></a></li>
 						<li><a href="https://www.linkedin.com/in/verna-schwartz-486236139/"><i class="fab fa-linkedin-in"></i></a></li>
 						<li><a href="mailto:vernas._@hotmail.com"><i class="fas fa-envelope"></i></a></li>

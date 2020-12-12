@@ -56,17 +56,19 @@ h2 {
 .header-right {
   float: none; 
 } 
-
+#bs4navbar{
+  z-index:1000;
+}
 .navbar {
   border-radius: 0px;
   margin-bottom: 0px;
   max-height: 80px;
   background-color: #0f0f0f;
-  border-bottom: 2px solid #F5007A;
+  border-bottom: 2px solid #F64747;
 }
   
   .navbar .navbar-nav .nav-link:hover{
-    color: #F5007A;
+    color: #F64747;
   }
   .navbar .navbar-nav .nav-link.active:hover{
     color: white;
@@ -143,6 +145,32 @@ h2 {
 
 /* My Work Cards */
 
+/* .rotate.down {
+  -ms-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(-180deg);
+}
+
+.rotate {
+  -moz-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.rotate2.down2 {
+  -ms-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(-180deg);
+}
+
+.rotate2 {
+  -moz-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+} */
+
 #mywork .card-text:last-child {
   margin-bottom:1.5rem;
 }
@@ -170,7 +198,7 @@ a.a-black{
   margin-bottom:10px;
 }
 a.a-black:hover{
-  color:#F5007A;
+  color:#F64747;
 }
 #mywork .btn{
   background-color: #0f0f0f;
@@ -181,7 +209,7 @@ a.a-black:hover{
   color: white;
 }
 #headingOne h3:hover{
-  color: #F5007A;
+  color: #F64747;
 }
 /* End First Card */
 
@@ -196,7 +224,7 @@ a.a-black:hover{
   color: white;
 }
 #headingTwo h3:hover{
-  color: #F5007A;
+  color: #F64747;
 }
 /* End Second Card */
 
@@ -293,45 +321,48 @@ a.a-black:hover{
           align-items: center;
   text-align: center;
   padding-bottom: 40px;
-  color: #0f0f0f; }
-  #title h1 {
-    font-size: 70px; }
+  color: #404040; }
   #title p {
-    font-size: 25px; }
+    font-size: 20px;
+    margin-bottom: 10px; }
   #title img {
     border-radius:5px;
+    max-width:80%;
   }
+
+@media screen and (max-width:767px){
+  #title img{
+    margin-top: 40px;
+  }
+}  
 /** End Header Section **/
 
 /** Degree Section **/
 #degree{
-  padding-bottom: 80px;
-  background-color: #0f0f0f;
-  padding-top:80px;
+  padding-bottom: 40px;
+  background-color: white;
+  padding-top:40px;
+}
+#degree .card{
+  background-color:white;
+  border:none;
+  box-shadow: 1px 1px 2px 1px lightgrey;
 }
 #degree .card-title{
-font-weight: bold;
+  font-weight: bold;
+
 }
-#degree .card-text p{
+#degree .card-text{
   font-size: 14px;
 }
+
 /** End Degree Section **/
 
-/** Skills Section **/
-#skills h2 {
-  color: white;
-  padding-bottom: 30px;
-  padding-top: 70px;
-   }
-#skills p {
-  color: white;
-  font-size: 25px;
-  padding-bottom: 70px; }
-/** End Skills Section **/
 
 /*** End About Page ***/
 
 /*** Projects Template ***/
+
 .navbar2 {
   border-radius: 0px;
   margin-bottom: 80px;
@@ -347,13 +378,13 @@ font-weight: bold;
     margin-left:0px;
   }
   .navbar2 .navbar-nav .nav-link:hover{
-    color: #F5007A;
+    color: #F64747;
   }
   .navbar2 .navbar-nav .nav-link.active:hover{
-    color: #F5007A;
+    color: #F64747;
   }
 /*   .navbar2 .navbar-nav2 .nav-link.active{
-    border-bottom: 2px solid #F5007A;
+    border-bottom: 2px solid #F64747;
     background-color:#F0F0F0;
   } */
   .navbar2 .navbar-nav .nav-link {
@@ -369,7 +400,7 @@ font-weight: bold;
 
 
 .navbar-nav a:hover{
-  color:#F5007A;
+  color:#F64747;
 }
 
 @media screen and (max-width: 767px){
@@ -414,6 +445,13 @@ font-weight: bold;
 #footer li{
   display: inline;
   padding-right: 10px;
+}
+
+@media screen and (max-width: 767px){
+  .social-list{
+    float:left;
+    padding-bottom:20px;
+  }
 }
 /* End Footer */
 

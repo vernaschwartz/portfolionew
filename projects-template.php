@@ -69,7 +69,7 @@ $(document).ready(function(){
                         <img class="img-fluid" src="<?php echo $image['url'];?>" alt="<?php echo $image['alt'];?>">
                     </div>
                     <div class="col-md-6">
-                        <h4><?php the_sub_field('title');?></h3>
+                        <h4><?php the_sub_field('title');?></h4>
                         <p style="line-height:30px;"><?php the_sub_field('text');?></p>
                     </div>
                 </div>
